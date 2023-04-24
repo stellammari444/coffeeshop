@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="The_Brookhouse_CoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="bjo-Di-qgr">
+                                <rect key="frame" x="-11" y="-22" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WwH-Sa-t3F">
+                                        <rect key="frame" x="0.0" y="59" width="414" height="671"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="b0s-SM-k7d">
+                                            <size key="itemSize" width="413" height="667"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="1f2-er-9T7" customClass="OnboardingCollectionViewCell" customModule="The_Brookhouse_CoffeeShop">
+                                                <rect key="frame" x="0.0" y="2" width="413" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Z4T-Zd-VMw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="413" height="667"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PwC-hR-dpB">
+                                                            <rect key="frame" x="0.0" y="0.0" width="413" height="527"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sp3-uk-mCe">
+                                                            <rect key="frame" x="16" y="527" width="381" height="124"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery At Your Doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvu-d2-emU">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="381" height="72"/>
+                                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="31"/>
+                                                                    <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery and Online reservation systen for restaurants and cafes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zR8-Bi-z6I">
+                                                                    <rect key="frame" x="0.0" y="88" width="381" height="36"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="zR8-Bi-z6I" firstAttribute="top" secondItem="Dvu-d2-emU" secondAttribute="bottom" constant="16" id="Cdt-Bz-rEQ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="zR8-Bi-z6I" secondAttribute="trailing" id="TpP-Vc-uqa"/>
+                                                                <constraint firstItem="Dvu-d2-emU" firstAttribute="top" secondItem="sp3-uk-mCe" secondAttribute="top" id="UNe-KW-7xQ"/>
+                                                                <constraint firstAttribute="bottom" secondItem="zR8-Bi-z6I" secondAttribute="bottom" id="bw4-Zs-S7i"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Dvu-d2-emU" secondAttribute="trailing" id="cRW-fN-f7F"/>
+                                                                <constraint firstItem="Dvu-d2-emU" firstAttribute="leading" secondItem="sp3-uk-mCe" secondAttribute="leading" id="d0G-ME-sRZ"/>
+                                                                <constraint firstItem="zR8-Bi-z6I" firstAttribute="leading" secondItem="sp3-uk-mCe" secondAttribute="leading" id="jvz-7Y-s4z"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="PwC-hR-dpB" secondAttribute="trailing" id="5lz-bt-tiG"/>
+                                                        <constraint firstItem="PwC-hR-dpB" firstAttribute="top" secondItem="Z4T-Zd-VMw" secondAttribute="top" id="EnZ-OU-5Cu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sp3-uk-mCe" secondAttribute="trailing" constant="16" id="MTk-Bx-gRu"/>
+                                                        <constraint firstItem="PwC-hR-dpB" firstAttribute="leading" secondItem="Z4T-Zd-VMw" secondAttribute="leading" id="WCS-mO-1tX"/>
+                                                        <constraint firstItem="sp3-uk-mCe" firstAttribute="top" secondItem="PwC-hR-dpB" secondAttribute="bottom" id="tBn-SW-vpR"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sp3-uk-mCe" secondAttribute="bottom" constant="16" id="w7w-jY-dVu"/>
+                                                        <constraint firstItem="sp3-uk-mCe" firstAttribute="leading" secondItem="Z4T-Zd-VMw" secondAttribute="leading" constant="16" id="zEs-2e-Fw2"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="413" height="667"/>
+                                                <connections>
+                                                    <outlet property="slideDescriptionLbl" destination="zR8-Bi-z6I" id="3h2-2E-1Qj"/>
+                                                    <outlet property="slideImageView" destination="PwC-hR-dpB" id="I2u-EH-edk"/>
+                                                    <outlet property="slideTitleLbl" destination="Dvu-d2-emU" id="2Lm-Lw-qSJ"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="ZrY-bn-kF8"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Cw8-sE-b0j"/>
+                                        </connections>
+                                    </collectionView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmm-O7-vJC">
+                                        <rect key="frame" x="132" y="772" width="150" height="50"/>
+                                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="8P3-xI-rZ9"/>
+                                            <constraint firstAttribute="height" constant="50" id="wjE-QP-bXV"/>
+                                        </constraints>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYX-zx-Pdn"/>
+                                        </connections>
+                                    </button>
+                                    <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tGK-2a-2si">
+                                        <rect key="frame" x="149.33333333333334" y="730" width="115.66666666666666" height="26"/>
+                                        <color key="pageIndicatorTintColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Gpb-y8-npc"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="WwH-Sa-t3F" firstAttribute="trailing" secondItem="Gpb-y8-npc" secondAttribute="trailing" id="3Mo-5s-UPC"/>
+                                    <constraint firstItem="WwH-Sa-t3F" firstAttribute="leading" secondItem="Gpb-y8-npc" secondAttribute="leading" id="HVo-gh-va0"/>
+                                    <constraint firstItem="zmm-O7-vJC" firstAttribute="top" secondItem="tGK-2a-2si" secondAttribute="bottom" constant="16" id="NFE-FY-bJG"/>
+                                    <constraint firstItem="Gpb-y8-npc" firstAttribute="bottom" secondItem="zmm-O7-vJC" secondAttribute="bottom" constant="40" id="Szm-2Y-nXV"/>
+                                    <constraint firstItem="tGK-2a-2si" firstAttribute="centerX" secondItem="Gpb-y8-npc" secondAttribute="centerX" id="W6N-cw-WCx"/>
+                                    <constraint firstItem="tGK-2a-2si" firstAttribute="top" secondItem="WwH-Sa-t3F" secondAttribute="bottom" id="lGQ-aG-Q7l"/>
+                                    <constraint firstItem="WwH-Sa-t3F" firstAttribute="top" secondItem="Gpb-y8-npc" secondAttribute="top" id="lRH-4a-w0W"/>
+                                    <constraint firstItem="zmm-O7-vJC" firstAttribute="centerX" secondItem="Gpb-y8-npc" secondAttribute="centerX" id="lc0-Cp-11k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="CollectionView" destination="WwH-Sa-t3F" id="P4C-Z1-8H2"/>
+                        <outlet property="nextBtn" destination="zmm-O7-vJC" id="T0E-P8-ums"/>
+                        <outlet property="pageControl" destination="tGK-2a-2si" id="Tdi-ew-IqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="4"/>
+        </scene>
+        <!--Tandc View Controller-->
+        <scene sceneID="Myh-00-vtq">
+            <objects>
+                <viewController storyboardIdentifier="tandc" id="BEU-y5-Hbz" customClass="tandcViewController" customModule="The_Brookhouse_CoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bnc-fa-5lR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6L-tV-joY">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="1243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvq-T7-oLc">
+                                        <rect key="frame" x="0.0" y="-103" width="393" height="829"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqL-u6-exX">
+                                                <rect key="frame" x="8" y="155" width="377" height="612"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">TERMS AND CONDITIONS
+Welcome to the Brookhouse Coffeeshop! These terms and conditions outline the rules and regulations for the use of the online Coffee Shop service, available to students and teachers. By accessing this service, you accept these terms and conditions in full. If you disagree with these terms and conditions, please do not use our service.
+ACCOUNT REGISTRATION AND USE
+1.1 In order to use our service, you must register for an account with the IT team via the link provided on your email .
+1.2 You must provide accurate and complete information during the registration process.
+1.3 You are solely responsible for maintaining the confidentiality of your account and password, and for all activities that occur under your account.
+1.4 You agree to notify us immediately of any unauthorized use of your account or password or any other breach of security.
+1.5 You must be a student or teacher at Brookhouse School in year 9 to 13 and IFY in order to use our service.
+ORDERING AND PAYMENT
+2.1 All orders must be placed online through the Brookhouse Coffeeshop app.
+2.2 Payment must be made at the time of ordering.
+2.3 Prices are subject to change without notice.
+ORDER SCHEDULING AND DELIVERY
+3.1 Pickup orders must be collected from the Brookhouse Coffeeshop during their operating hours (break-time, lunchtime and after school).
+3.2 Delivery orders are only available to students and teachers who are going on a trip.
+3.3 We will make every effort to ensure that orders are ready on time, but we cannot guarantee collection times.
+CANCELLATIONS AND REFUNDS
+4.1 Order cannot be canceled once they have been placed.
+4.2 If you wish to change your order, see coffee shop staff to exchange your item for another of the same price.
+4.3 Refunds will not be issued under any circumstances.
+CONSEQUENCES OF VIOLATION
+5.1 We reserve the right to deactivate or suspend your account if we determine that you have violated these terms and conditions.
+5.2 Deactivation or suspension may be temporary or permanent, depending on the severity of the violation.
+5.3 In the event of account deactivation or suspension, you will not be entitled to any refunds.
+If the coffee shop makes any changes to our policies or procedures, we will notify our customers via email and post the updated information on our website. We value transparency and strive to communicate clearly with our customers. By continuing to use our website after changes to our policies, you agree to abide by the new terms and conditions
+Thank you for using the Brookhouse Coffeeshop. We hope you enjoy our service!
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NE8-27-8TV">
+                                                <rect key="frame" x="164" y="99" width="64" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTM-Wm-mHW">
+                                                <rect key="frame" x="300" y="786" width="85" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="I accept"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="vbK-u4-ZcA"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="cgS-4h-G52"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8dg-jY-DPl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eaG-cb-3dx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avx-w5-bur" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2212.9770992366412" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gad-Yy-9gI">
+            <objects>
+                <navigationController storyboardIdentifier="TandcNC" automaticallyAdjustsScrollViewInsets="NO" id="izg-dt-cts" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="43w-gd-kKR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BEU-y5-Hbz" kind="relationship" relationship="rootViewController" id="Wp2-52-MyN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQK-sv-nue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
